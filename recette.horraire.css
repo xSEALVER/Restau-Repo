@@ -1,0 +1,339 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #A78963;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #224d4d;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    
+}
+
+.menu-button{
+    display: none;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.horaires-container{
+    background-color: #224d4d;
+    color: white;
+    width: 40%;
+    margin: auto;
+    padding: 8rem;
+    margin-top: 2rem;
+    font-family: raleway;
+    
+    
+}
+
+.horaires-row{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+
+.jour{
+    margin-bottom: 2rem;
+}
+
+.main-container-contact, .input-container{
+    display: flex;
+}
+
+.main-container-contact{
+    margin-top: 6rem;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.three-input{
+    padding: 10px 140px 10px 3px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+input{
+    margin-top: 1rem;
+}
+
+.message-input{
+    padding-bottom: 125px;
+    margin-bottom: 40px;
+
+}
+
+#map {
+    width: 500px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+
+.horaires-contact{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-family: raleway;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #A78963;
+}
+
+.pre-footer{
+    background-color: #224d4d;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    padding-left: 160px;
+    padding-top: 2.5rem;
+    gap: 30rem;
+    font-size: 14px;
+    font-family: raleway;
+}
+
+.pref-text1{
+    width: 450px;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+
+.pref-text2{
+    width: 325px;
+    line-height: 2rem;
+    font-weight: lighter;
+}
+
+.ad-pref{
+    text-align: center;
+    align-items: center;
+    font-family: raleway;
+    font-size: 14px;
+    
+}
+
+.logo{
+    width: 120px;
+    position: relative;
+
+}
+
+.rue{
+    margin-bottom: 0.8rem;
+    
+}
+
+.paris{
+    margin-bottom: 1rem;
+}
+
+span{
+    font-weight: bold;
+}
+
+.img-class{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.social{
+    width: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #05090E;
+}
+
+footer p{
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: raleway;
+    padding-left: 160px;
+    line-height: 150px;
+}
+
+
+
+@media   (max-width: 1232px) {
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+
+
+    .horaires-container{
+        background-color: #224d4d;
+        color: white;
+        width: 90%;
+        margin: auto;
+        padding: 3rem;
+        margin-top: 2rem;
+        font-family: raleway;
+        
+    }
+
+    .main-container-contact{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    
+
+    }
+
+    .input-container{
+        padding-right: 20px;
+        padding-left: 20px;
+      
+        width: 100%;
+        
+    }
+
+  
+
+    .pre-footer{
+        width: 100%;
+        background-color: #224d4d;
+        color: white;
+        align-items: center;
+        height: 600px;
+        padding-left: 20px;
+        padding-top: 2.5rem;
+        font-size: 14px;
+        font-family: raleway;
+        gap: 0.1rem;
+        flex-wrap: wrap;
+    }
+
+  
+    .ad-pref{
+    
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-family: raleway;
+        font-size: 14px;
+    }
+
+    .pref-text1{
+        width: 325px;
+        line-height: 2rem;
+        margin-bottom: 2rem;
+        font-weight: lighter;
+    }
+
+    .ad-pref{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        font-family: raleway;
+        font-size: 14px;
+        
+    }
+
+    .logo{
+        width: 80px;
+        position: relative;
+    
+    }
+
+    footer{
+        width: 100%;
+        height: 150px;
+        background-color: #05090E;
+    }
+    
+    footer p{
+        color: #9B9B9B;
+        font-size: 14px;
+        font-family: raleway;
+        padding-left: 20px;
+        line-height: 150px;
+    }
+    
+    
+    
+}
+
+@media (max-width: 430px) {
+    .sidebar{
+        width: 100%;
+    }
+    
+}

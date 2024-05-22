@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 4000px;
+}
+
+nav{
+    background-color: #A78963;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #224d4d;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    
+}
+
+.menu-button{
+    display: none;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+
+
+
+.header-img{
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+}
+
+
+
+.f-image{
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.resto-paris{
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    font-size: 18px;
+}
+
+
+.reserver-button{
+    background-color: transparent;
+    color: white;
+    padding: 10px 60px 10px 60px;
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    border: solid 3px white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.food_info-container1{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    gap: 4rem;
+    padding-left: 2%;
+    margin-bottom: 10rem;
+
+}
+
+.images-nous img{
+    width: 375px;
+    object-fit: contain;
+    border-radius: 0.8rem;
+
+}
+
+.info-nous h3{
+    font-size: 50px;
+    font-family: Libre Baskerville;
+    margin-bottom: 1.4rem;
+}
+
+.p-accueil{
+    font-size: 18px;
+    width: 600px;
+    font-family: raleway;
+    margin-bottom: 3rem;
+    line-height: 25px;
+
+}
+
+.info-button{
+    background-color: #224d4d;
+    padding: 20px 40px 20px 40px;
+    border: none;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+
+
+.images-nous2 img{
+    width: 375px;
+    object-fit: contain;
+    border-radius: 0.8rem;
+   
+    
+}
+
+
+
+.saison{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-family: raleway;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #A78963;
+}
+
+
+
+.menu-h1-a{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: Libre Baskerville;
+    color: #4A4A4A;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.menu-h1-a{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-family: Libre Baskerville;
+    color: #4A4A4A;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+
+
+
+.grid-row{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.grid-row p{
+    width: 400px;
+    font-family: raleway;
+    line-height: 30px;
+    font-size: 14px;
+
+}
+
+.img-vedettes{
+    width: 400px;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+
+}
+
+
+
+
+.convives{
+    font-size: 18px;
+    font-family: raleway;
+    color: #A78963;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+
+.avis-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #224d4d;
+    color: white;
+    padding: 30px 0px 30px 0px;
+    border-bottom-color: black;
+    border-bottom: 1px solid white;
+   
+}
+
+.pics-avis{
+    width: 80px;
+    object-fit: cover;
+    border-radius: 160px;
+    margin-bottom: 1rem;
+}
+
+.np{
+    margin-bottom: 1rem;
+}
+
+.avis{
+    width: 200px;
+}
+
+.pre-footer{
+    background-color: #224d4d;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    padding-left: 160px;
+    padding-top: 2.5rem;
+    gap: 30rem;
+    font-size: 14px;
+    font-family: raleway;
+}
+
+.pref-text1{
+    width: 450px;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+
+.pref-text2{
+    width: 325px;
+    line-height: 2rem;
+    font-weight: lighter;
+}
+
+.ad-pref{
+    text-align: center;
+    align-items: center;
+    font-family: raleway;
+    font-size: 14px;
+    
+}
+
+.logo{
+    width: 120px;
+    position: relative;
+
+}
+
+.rue{
+    margin-bottom: 0.8rem;
+    
+}
+
+.paris{
+    margin-bottom: 1rem;
+}
+
+span{
+    font-weight: bold;
+}
+
+.img-class{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.social{
+    width: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #05090E;
+}
+
+footer p{
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: raleway;
+    padding-left: 160px;
+    line-height: 150px;
+}
+
+@media (max-width: 1232px) {
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+
+    .food_info-container1{
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 6rem;
+        flex-wrap: wrap;
+    }
+
+    .info-nous h3{
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        font-family: Libre Baskerville;
+        margin-bottom: 1rem;
+    }
+    
+    .p-accueil{
+        text-align: center;
+        width: 100%;
+        font-size: 22px;
+        font-family: raleway;
+        margin-bottom: 1rem;
+        line-height: 25px;
+    }
+
+    .info-button{
+        background-color: #224d4d;
+        padding: 20px 40px 20px 40px;
+        border: none;
+        border-radius: 4rem;
+        font-size: 1.2rem;
+        color: white;
+        display: block;
+        margin: auto;
+    
+    }
+    
+
+    .images-nous img{
+        width: 100%;
+        object-fit: contain;
+        border-radius: 0.8rem;
+    
+    }
+    
+    .pre-footer{
+            width: 100%;
+            background-color: #224d4d;
+            color: white;
+            align-items: center;
+            height: 600px;
+            padding-top: 2.5rem;
+            font-size: 14px;
+            font-family: raleway;
+            flex-wrap: wrap;
+        }
+
+        .pref-text{
+            align-items: center;
+        }
+    
+      
+        .ad-pref{
+        
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            font-family: raleway;
+            font-size: 14px;
+        }
+    
+        .pref-text1{
+            width: 325px;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+            font-weight: lighter;
+        }
+    
+        .ad-pref{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            font-family: raleway;
+            font-size: 14px;
+            
+        }
+    
+        .logo{
+            width: 80px;
+            position: relative;
+        
+        }
+    
+        footer{
+            width: 100%;
+            height: 150px;
+            background-color: #05090E;
+        }
+        
+        footer p{
+            color: #9B9B9B;
+            font-size: 14px;
+            font-family: raleway;
+            padding-left: 20px;
+            line-height: 150px;
+        }
+        
+        .grid-row{
+        flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-bottom: 5rem;
+        }
+
+        .img-vedettes{
+            width: 100%;
+            border-radius: 0.8rem;
+            margin-bottom: 1rem;
+        
+        }
+
+        .plat-vedette1{
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        }
+        
+        .avis-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+              
+            background-color: #224d4d;
+            color: white;
+            padding: 30px 0px 30px 0px;
+            border-bottom-color: black;
+            border-bottom: 1px solid white;
+        }
+
+        .info-containers{
+            margin-bottom: 1rem;
+        }
+
+        .np{
+            margin-bottom: 1rem;
+        }
+        
+        .avis{
+            text-align: center;
+            width: 100%;
+           
+        }
+
+        .resto-paris{
+            position: absolute;
+            top: 16%;
+            left: 5%;
+            font-size: 12px;
+        }
+        
+        
+        .reserver-button{
+            background-color: transparent;
+            color: white;
+            padding: 10px 60px 10px 60px;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            border: solid 3px white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .sidebar{
+            width: 100%;
+        }
+        
+    }
