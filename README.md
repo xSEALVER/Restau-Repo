@@ -118,4 +118,3 @@ Ou utiliser l'extension **Live Server** sur VS Code pour un rechargement automat
 
 ---
 
-© 24 le Restaurant — 24 rue Jean Mermoz, 75008 Paris — 2024
